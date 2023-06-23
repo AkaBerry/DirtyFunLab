@@ -1,0 +1,19 @@
+$TTL 86400
+@       IN      SOA     ns1.dirtyfun.com.br. admin.dirtyfun.com.br. (
+                        2023062301      ; número de série (atualize conforme necessário)
+                        3600            ; tempo de atualização
+                        1800            ; tempo de retrial
+                        604800          ; tempo de expiração
+                        86400           ; tempo mínimo de cache
+                        )
+
+        IN      NS      ns1.dirtyfun.com.br.     ; servidor de nomes primário
+        IN      NS      ns2.dirtyfun.com.br.     ; servidor de nomes secundário
+
+        IN      A       192.168.0.1              ; registro A para o domínio raiz
+
+ns1     IN      A       192.168.0.2              ; endereço IP do servidor de nomes primário
+ns2     IN      A       192.168.0.3              ; endereço IP do servidor de nomes secundário
+
+www     IN      A       192.168.0.4              ; registro A para "www.dirtyfun.com.br"
+originwww     IN      A       192.168.0.4              ; registro A para "originwww.dirtyfun.com.br"
