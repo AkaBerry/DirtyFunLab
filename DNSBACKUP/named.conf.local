@@ -1,0 +1,6 @@
+zone "dirtyfun.com.br" {
+    type slave;
+    file "db.dirtyfun.com.br";
+    masters { 96.126.116.144; };  # ns1 private IP
+};
+
